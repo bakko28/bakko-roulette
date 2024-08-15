@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BAKKOS ROULETE</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="img/logo.png" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="img/logo.png" alt="">
+            <p>BAKKOS ROULETE</p>
+        </div>
+        <nav>
+            <a href="">Double</a>
+            <a href="">Link #2</a>
+            <a href="">Link #3</a>
+        </nav>
+        <div class="userbox">
+            <p class="balance">100 $</p>
+            <p class="urename"></p>
+            <div class="user-avatar">
+                <img src="#" alt="#">
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="game">
+            <div class="shadow-left"></div>
+            <div class="shadow-right"></div>
+            <div class="raffle-roller">
+                <div class="raffle-roller-holder-bar"></div>
+                <div class="raffle-roller-holder">
+                    <div class="raffle-roller-container" style="margin-left: 0px;">
+                    </div>
+                </div>
+            </div>
+            <div class="infobox">
+                <div class="info-bets">
+                    <div class="person card">
+                        <i class="fa-solid fa-hand-holding-dollar"></i>
+                        <p>Банк: </p>
+                        <p>13$</p>
+                    </div>
+                    <div class="bank card">
+                        <i class="fa-solid fa-user-astronaut"></i>
+                        <p>Игроков: </p>
+                        <p>123</p>
+                    </div>
+                </div>
+                <div class="info-results">
+                    <i class="fa-solid fa-book"></i>
+                    <p>Последние 100:</p>
+                    <div class="results">
+                        <div class="result-card" id="blue"></div>
+                        <div class="result-card" id="green"></div>
+                        <div class="result-card" id="gold"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="inventory">
+            </div>
+            <div class="textbox">
+                <p id="countdown">До начала игры: </p>
+            </div>
+        </div>
+        <div class="bets">
+            <div class="green-box">
+                <button id="betGreen" onclick="checkColorBtn('green')">green</button>
+                <div class="dep-info-green">
+                    
+                </div>
+            </div>
+            <div class="gold-box">
+                <button id="betGold" onclick="checkColorBtn('gold')">gold</button>
+                <div class="dep-info-gold">
+                    
+                </div>
+            </div>
+            <div class="blue-box">
+                <button id="betBlue" onclick="checkColorBtn('blue')">blue</button>
+                <div class="dep-info-blue">
+                    
+                </div>
+            </div>
+        </div>
+    </main>
+    
+
+    <button onclick="saveGamesBoxToFile(gamesBox);" class="download-log"><i class="fa-solid fa-cloud-arrow-down"></i></button>
+    <button ondblclick="generate(1)" class="test-game"><i class="fa-solid fa-hippo"></i></button>
+
+    <script src="https://kit.fontawesome.com/3d05b8f0f7.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
