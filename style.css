@@ -428,11 +428,20 @@ main {
 }
 
 .table {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 80%;
     height: 80%;
     border-radius: 35%;
     background-color: #08473d;
     border: 10px #452602 solid;
+}
+
+#countdown {
+    font-size: 36px;
+    color: #fff;
+    font-weight: 500;
 }
 
 .game-userbox {
@@ -472,23 +481,19 @@ main {
 #user1 {
     bottom: 20px;
     left: 45%;
-    background-color: red;
 }
 
 #user2 {
     top: 45%;
     left: 20px;
-    background-color: yellow;
 }
 
 #user3 {
     top: 20px;
     left: 45%;
-    background-color: green;
 }
 
 #user4 {
     top: 45%;
     right: 20px;
-    background-color: blue;
 }
