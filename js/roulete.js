@@ -222,6 +222,9 @@ function checkWinner(color) {
 }
 
 function clearGame() {
+    document.getElementById('betGreen').disabled = false;
+    document.getElementById('betBlue').disabled = false;
+    document.getElementById('betGold').disabled = false;
     users[0].chose_bet = ''
     users[0].price_bet = 0
 

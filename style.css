@@ -304,6 +304,14 @@ img {
     cursor: pointer;
 }
 
+.gold-box #betGold {
+    background-color: #bba200;
+}
+
+.blue-box #betBlue {
+    background-color: #004196;
+}
+
 .dep-info-green, .dep-info-gold, .dep-info-blue {
     margin-top: 8px;
     border-radius: 16px;
@@ -317,11 +325,11 @@ img {
 }
 
 
-.blue-box #betBlue, .dep-info-blue {
+.dep-info-blue {
     background-color: #00419659;
 }
 
-.gold-box #betGold, .dep-info-gold {
+.dep-info-gold {
     background-color: #bba20057;
 }
 
@@ -413,7 +421,74 @@ main {
     align-items: center;
     justify-content: center;
     width: 100vw;
+    position: relative;
     height: 100%;
     margin-bottom: 32px;
     border: 2px green solid;
+}
+
+.table {
+    width: 80%;
+    height: 80%;
+    border-radius: 35%;
+    background-color: #08473d;
+    border: 10px #452602 solid;
+}
+
+.game-userbox {
+    display: flex;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border: 2px yellow solid;
+}
+
+.game-userbox .usercard {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    width: 200px;
+    height: 90px;
+    padding: 8px;
+}
+
+.game-userbox .usercard .textbox {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    font-size: 24px;
+    padding: 0;
+    margin: 0;
+}
+
+.game-userbox .usercard .user-avatar img{
+    margin-right: 8px;
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    background-color: #fff;
+}
+
+#user1 {
+    bottom: 20px;
+    left: 45%;
+    background-color: red;
+}
+
+#user2 {
+    top: 45%;
+    left: 20px;
+    background-color: yellow;
+}
+
+#user3 {
+    top: 20px;
+    left: 45%;
+    background-color: green;
+}
+
+#user4 {
+    top: 45%;
+    right: 20px;
+    background-color: blue;
 }
